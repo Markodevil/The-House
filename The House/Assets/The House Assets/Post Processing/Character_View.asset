@@ -85,10 +85,10 @@ MonoBehaviour:
   eyeAdaptation:
     m_Enabled: 1
     m_Settings:
-      lowPercent: 48.999992
+      lowPercent: 48.999935
       highPercent: 99
       minLuminance: -5
-      maxLuminance: 1
+      maxLuminance: 2
       keyValue: 0.25
       dynamicKeyValue: 1
       adaptationType: 0
@@ -100,10 +100,10 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 1
+        intensity: 20
         threshold: 1.1
         softKnee: 0.073
-        radius: 3.49
+        radius: 7
         antiFlicker: 0
       lensDirt:
         texture: {fileID: 0}
@@ -113,10 +113,10 @@ MonoBehaviour:
     m_Settings:
       tonemapping:
         tonemapper: 2
-        neutralBlackIn: 0.016
-        neutralWhiteIn: 10
-        neutralBlackOut: 0
-        neutralWhiteOut: 10
+        neutralBlackIn: 0.025
+        neutralWhiteIn: 13.2
+        neutralBlackOut: 0.019
+        neutralWhiteOut: 7.5
         neutralWhiteLevel: 5.3
         neutralWhiteClip: 10
       basic:
