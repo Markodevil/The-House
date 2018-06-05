@@ -35,8 +35,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1955337443945422}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3, y: -1.1, z: -10.8}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.17596455, y: 1.1217018, z: 32.354}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,7 +82,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1955337443945422}
-  m_Mesh: {fileID: 4300000, guid: d5d4760cec3e0e1458dc4ebceef3054c, type: 3}
+  m_Mesh: {fileID: 4300002, guid: 0b1a70ae94b65cc40abfe226c5d904b7, type: 3}
 --- !u!95 &95454988272366604
 Animator:
   serializedVersion: 3
@@ -91,7 +91,7 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1955337443945422}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: d5d4760cec3e0e1458dc4ebceef3054c, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 0b1a70ae94b65cc40abfe226c5d904b7, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
