@@ -21,25 +21,26 @@ public class CamSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.D))
+        if (usingPhone)
         {
-            securityCameras[activeCamera].SetActive(false);
-            activeCamera += 1;
-            if (activeCamera > securityCameras.Length - 1) {activeCamera = 0;} 
-            securityCameras[activeCamera].SetActive(true);
-            Debug.Log(activeCamera);
-        }
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                securityCameras[activeCamera].SetActive(false);
+                activeCamera += 1;
+                if (activeCamera > securityCameras.Length - 1) { activeCamera = 0; }
+                securityCameras[activeCamera].SetActive(true);
+                Debug.Log(activeCamera);
+            }
 
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            securityCameras[activeCamera].SetActive(false);
-            activeCamera -= 1;
-            if (activeCamera < 0) { activeCamera = securityCameras.Length - 1; }
-            securityCameras[activeCamera].SetActive(true);
-            Debug.Log(activeCamera);
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                securityCameras[activeCamera].SetActive(false);
+                activeCamera -= 1;
+                if (activeCamera < 0) { activeCamera = securityCameras.Length - 1; }
+                securityCameras[activeCamera].SetActive(true);
+                Debug.Log(activeCamera);
+            }
         }
-
         if (Input.GetKeyDown(KeyCode.F))
         {
             TogglePhone();
