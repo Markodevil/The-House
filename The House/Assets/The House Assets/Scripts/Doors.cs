@@ -18,7 +18,7 @@ public class Doors : MonoBehaviour {
 	
     public void ChangeDoorState()
     {
-        GetComponent<AudioSource>();
+        GetComponent<AudioSource>().Play();
         open = !open;
     }
 
