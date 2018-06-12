@@ -10,18 +10,23 @@ public class CamSystem : MonoBehaviour
     public bool usingPhone = false;
     public GameObject phone;
     public GameObject player;
-  
+    public AudioClip cameraOpen;
+    public AudioClip cameraClose;
+    public AudioClip cameraSwap;
+
 
     // Use this for initialization
+
     void Start()
     {
-
+      
     }
 
     // Update is called once per frame
     void Update()
     {
         if (usingPhone)
+
         {
             if (Input.GetKeyDown(KeyCode.D))
             {
@@ -30,6 +35,11 @@ public class CamSystem : MonoBehaviour
                 if (activeCamera > securityCameras.Length - 1) { activeCamera = 0; }
                 securityCameras[activeCamera].SetActive(true);
                 Debug.Log(activeCamera);
+
+                AudioSource audio = GetComponent<AudioSource>();
+                audio.Play();
+                audio.clip = cameraSwap;
+
             }
 
             if (Input.GetKeyDown(KeyCode.A))
@@ -39,13 +49,22 @@ public class CamSystem : MonoBehaviour
                 if (activeCamera < 0) { activeCamera = securityCameras.Length - 1; }
                 securityCameras[activeCamera].SetActive(true);
                 Debug.Log(activeCamera);
+
+                AudioSource audio = GetComponent<AudioSource>();
+                audio.Play();
+                audio.clip = cameraSwap;
+
             }
         }
         if (Input.GetKeyDown(KeyCode.F))
         {
             TogglePhone();
             TogglePlayerControls();
-           
+
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            audio.clip = cameraOpen;
+
         }
     }
 
@@ -59,4 +78,5 @@ public class CamSystem : MonoBehaviour
     {
         player.GetComponent<FirstPersonController>().enabled = (!usingPhone);
     }
+
 }
