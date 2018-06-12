@@ -46,7 +46,7 @@ public class Ghost : MonoBehaviour {
         {
             gameoverCanvas.SetActive(true);
             player.GetComponent<FirstPersonController>().enabled = false;
-            Debug.Log("Game Over");
+            //Debug.Log("Game Over");
         }   
 
 	}
