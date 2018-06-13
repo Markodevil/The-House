@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 4847524415435032}
   m_Layer: 0
   m_Name: Candles
-  m_TagString: Untagged
+  m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1344587942493508}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.966, y: -0.0012, z: -6.9874}
+  m_LocalPosition: {x: 17.13761, y: -0.9331297, z: -18.634476}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4540182379999024}
@@ -149,7 +149,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2260f99447f22d0488e6b9ce7f2db292, type: 2}
+  - {fileID: 2100000, guid: b83ed9bf41a6a5c459ae358b741f1f84, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -183,7 +183,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2260f99447f22d0488e6b9ce7f2db292, type: 2}
+  - {fileID: 2100000, guid: b83ed9bf41a6a5c459ae358b741f1f84, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -217,7 +217,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2260f99447f22d0488e6b9ce7f2db292, type: 2}
+  - {fileID: 2100000, guid: b83ed9bf41a6a5c459ae358b741f1f84, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

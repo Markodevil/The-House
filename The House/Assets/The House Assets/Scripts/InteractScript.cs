@@ -2,13 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractScript : MonoBehaviour {
+public class InteractScript : MonoBehaviour
+{
     public float interactDistance = 5f;
-	
-	// Update is called once per frame
-	void Update ()
+    public GameObject Candles;
+    public GameObject Charcoal;
+    public GameObject Matches;
+
+
+    // Update is called once per frame
+    void Update()
     {
-		if(Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Ray ray = new Ray(transform.position, transform.forward);
             RaycastHit hit;
@@ -21,9 +26,17 @@ public class InteractScript : MonoBehaviour {
 
                 if (hit.collider.CompareTag("Collectable"))
                 {
-
+                    Candles.SetActive(false);
+                }
+                if (hit.collider.CompareTag("Collectable"))
+                {
+                    Charcoal.SetActive(false);
+                }
+                if (hit.collider.CompareTag("Collectable"))
+                {
+                    Matches.SetActive(false);
                 }
             }
         }
-	}
+    }
 }
