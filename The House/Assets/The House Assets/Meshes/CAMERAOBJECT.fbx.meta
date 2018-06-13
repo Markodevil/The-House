@@ -1,24 +1,26 @@
 fileFormatVersion: 2
-guid: ebbde188ed6444f408794b25952f34fe
-timeCreated: 1528853497
+guid: ce2026639c039604cb31886b9cc595e5
+timeCreated: 1528851993
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: CAM_OBJ
+    100002: CAMERAOBJECT
     100004: Origin
     400000: //RootNode
-    400002: CAM_OBJ
+    400002: CAMERAOBJECT
     400004: Origin
     2100000: lambert1
-    2300000: CAM_OBJ
-    2300002: Origin
-    3300000: CAM_OBJ
-    3300002: Origin
-    4300000: CAM_OBJ
+    2300000: //RootNode
+    2300002: CAMERAOBJECT
+    2300004: Origin
+    3300000: //RootNode
+    3300002: CAMERAOBJECT
+    3300004: Origin
+    4300000: CAMERAOBJECT
     4300002: Origin
-    7400000: Take 001
+    7400000: Death
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -46,7 +48,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

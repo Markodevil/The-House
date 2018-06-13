@@ -16,10 +16,15 @@ public class SceneChanger : MonoBehaviour {
 		SceneManager.LoadScene(menuLevel);
 	}
 
-	public void quitgame ()
+	public void Quitgame()
 	{
 		//Debug.Log ("Quit");
 		Application.Quit();
 	}
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 
 }
