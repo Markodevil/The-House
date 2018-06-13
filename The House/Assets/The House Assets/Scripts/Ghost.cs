@@ -13,6 +13,7 @@ public class Ghost : MonoBehaviour {
     private NavMeshAgent navComponent;
     public GameObject gameoverCanvas;
     public GameObject player;
+    public GameObject deathCam;
 
     void Start ()
     {
@@ -44,10 +45,15 @@ public class Ghost : MonoBehaviour {
 
         if (dist <= deathDistance)
         {
-            gameoverCanvas.SetActive(true);
+            Invoke("ShowGameOverUI", 2f);
             player.GetComponent<FirstPersonController>().enabled = false;
-            //Debug.Log("Game Over");
-        }   
 
+            deathCam.SetActive(true);
+        } 
 	}
+    public void ShowGameOverUI()
+    {
+        gameoverCanvas.SetActive(true);
+    }
 }
+

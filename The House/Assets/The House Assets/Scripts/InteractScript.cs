@@ -18,6 +18,11 @@ public class InteractScript : MonoBehaviour {
                 {
                     hit.collider.transform.parent.GetComponent<Doors>().ChangeDoorState();
                 }
+
+                if (hit.collider.CompareTag("Collectable"))
+                {
+
+                }
             }
         }
 	}

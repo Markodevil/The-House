@@ -37,8 +37,9 @@ public class CamSystem : MonoBehaviour
                 Debug.Log(activeCamera);
 
                 AudioSource audio = GetComponent<AudioSource>();
-                audio.Play();
                 audio.clip = cameraSwap;
+                audio.Play();
+               
 
             }
 
@@ -51,8 +52,9 @@ public class CamSystem : MonoBehaviour
                 Debug.Log(activeCamera);
 
                 AudioSource audio = GetComponent<AudioSource>();
-                audio.Play();
                 audio.clip = cameraSwap;
+                audio.Play();
+                
 
             }
         }
@@ -62,8 +64,9 @@ public class CamSystem : MonoBehaviour
             TogglePlayerControls();
 
             AudioSource audio = GetComponent<AudioSource>();
-            audio.Play();
             audio.clip = cameraOpen;
+            audio.Play();
+            
 
         }
     }
