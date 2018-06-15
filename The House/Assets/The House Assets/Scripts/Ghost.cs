@@ -15,6 +15,8 @@ public class Ghost : MonoBehaviour {
     public GameObject player;
     public GameObject deathCam;
     public AudioClip scareSound;
+	bool playAudio = false;
+	public float Volume;
 
     void Start ()
     {
@@ -44,15 +46,16 @@ public class Ghost : MonoBehaviour {
             }
         }
 
-        if (dist <= deathDistance)
+		if (dist <= deathDistance)
         {
+
             Invoke("ShowGameOverUI", 5f);
             player.GetComponent<FirstPersonController>().enabled = false;
             deathCam.SetActive(true);
 
-            AudioSource audio = GetComponent<AudioSource>();
-            audio.Play();
-            audio.clip = scareSound;
+            //AudioSource audio = GetComponent<AudioSource>();
+			//audio.PlayOneShot(scareSound);
+           
         } 
 	}
     void ShowGameOverUI()
