@@ -15,6 +15,7 @@ public class Ghost : MonoBehaviour {
     public GameObject player;
     public GameObject deathCam;
     public AudioClip scareSound;
+    public AudioClip gameoverSound;
 	bool playAudio = false;
 	public float Volume;
 
@@ -53,14 +54,15 @@ public class Ghost : MonoBehaviour {
             player.GetComponent<FirstPersonController>().enabled = false;
             deathCam.SetActive(true);
 
-            //AudioSource audio = GetComponent<AudioSource>();
-			//audio.PlayOneShot(scareSound);
+
            
         } 
 	}
     void ShowGameOverUI()
     {
         gameoverCanvas.SetActive(true);
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.PlayOneShot(gameoverSound);
     }
 }
 
