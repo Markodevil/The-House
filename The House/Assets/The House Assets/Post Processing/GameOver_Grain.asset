@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a3bdb2cd68f901469e7cc149151eb49, type: 3}
-  m_Name: Camera_Grain
+  m_Name: GameOver_Grain
   m_EditorClassIdentifier: 
   debugViews:
     m_Enabled: 1
@@ -289,9 +289,9 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       colored: 0
-      intensity: 0.445
+      intensity: 1
       size: 0.3
-      luminanceContribution: 0.348
+      luminanceContribution: 0
   vignette:
     m_Enabled: 0
     m_Settings:

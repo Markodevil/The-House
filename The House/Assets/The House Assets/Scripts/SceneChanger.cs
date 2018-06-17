@@ -7,7 +7,7 @@ public class SceneChanger : MonoBehaviour {
 
     public Animator sceneAnimator;
 
-    public void LoadScene()
+    public void LoadMain()
 	{
 		SceneManager.LoadScene("Main");
 	}
@@ -25,7 +25,7 @@ public class SceneChanger : MonoBehaviour {
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+       // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }
