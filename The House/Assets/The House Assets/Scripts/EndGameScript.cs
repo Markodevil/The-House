@@ -22,6 +22,8 @@ public class EndGameScript : MonoBehaviour
     void ShowEndGame()
     {
         SceneManager.LoadScene("EndScreen");
+        //Cursor.lockState = CursorLockMode.Confined;
+        
 
     }
 

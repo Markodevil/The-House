@@ -10,16 +10,15 @@ public class LevelChanger : MonoBehaviour
     public Animator sceneAnimator;
     private int levelToLoad;
 
-    // Update is called once per frame
 
-    private void Start()
+    void Start()
     {
         sceneAnimator = GetComponent<Animator>();
     }
     void Update ()
     {
-
-	}
+        
+    }
 
     public void FadeToQuit()
     {
