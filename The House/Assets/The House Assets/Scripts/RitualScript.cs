@@ -8,14 +8,13 @@ public class RitualScript : MonoBehaviour
     public GameObject ritualObjects;
     public GameObject ghost;
     public AudioSource music;
-    public GameObject messageTriggerSomethingNeeded;
     public GameObject messageGoToBed;
-    public GameObject messageTriggerSleep;
+    public GameObject TriggerSleep;
     public AudioClip candleFlame;
     // Use this for initialization
     void Start ()
     {
-		
+        TriggerSleep.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -44,13 +43,18 @@ public class RitualScript : MonoBehaviour
                 audio.PlayOneShot(candleFlame);
                 // turn on go to bed message
                 messageGoToBed.SetActive(true);
+                StartCoroutine("WaitForDelay");
 
                 // turn on sleep message
-                messageTriggerSleep.SetActive(true);
+                TriggerSleep.SetActive(true);
                 
             }
         }
     }
+    private IEnumerator WaitForDelay()
+    {
+        yield return new WaitForSeconds(3);
+        Destroy(messageGoToBed);
 
-
+    }
 }
