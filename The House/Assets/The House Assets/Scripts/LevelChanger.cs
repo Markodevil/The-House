@@ -33,10 +33,10 @@ public class LevelChanger : MonoBehaviour
         Invoke("StartGame", fadeTime);
     }
 
-    public void FadeToReset()
+    public void FadeToMenu()
     {
         sceneAnimator.SetTrigger("FadeOut");
-        Invoke("ResetGame", fadeTime);
+        Invoke("QuitToMenu", fadeTime);
     }
 
     public void StartGame()
@@ -48,5 +48,11 @@ public class LevelChanger : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Has Quit");
+    }
+
+    public void QuitToMenu()
+    {
+        SceneManager.LoadScene("Menu");
+        
     }
 }
