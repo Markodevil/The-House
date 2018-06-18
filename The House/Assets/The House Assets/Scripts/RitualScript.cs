@@ -11,6 +11,7 @@ public class RitualScript : MonoBehaviour
     public GameObject messageGoToBed;
     public GameObject TriggerSleep;
     public AudioClip candleFlame;
+    public GameObject circleGlow;
     // Use this for initialization
     void Start ()
     {
@@ -47,6 +48,9 @@ public class RitualScript : MonoBehaviour
 
                 // turn on sleep message
                 TriggerSleep.SetActive(true);
+
+                // turn off glow tutorial
+                //circleGlow.SetActive(false);
                 
             }
         }
