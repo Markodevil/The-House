@@ -36914,7 +36914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundToPlay: {fileID: 8300000, guid: b87e514357986f248aa92011acb96e60, type: 3}
-  Volume: 1
+  Volume: 0.5
   alreadyPlayed: 0
 --- !u!23 &1571355001
 MeshRenderer:
