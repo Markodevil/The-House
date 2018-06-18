@@ -8,6 +8,9 @@ public class ShowElements : MonoBehaviour
     public GameObject canvasObject;
     public GameObject itemToDestroy;
     public GameObject triggerObject;
+    public RitualScript ritualObject;
+    public AudioClip collectSound;
+
  
 
 
@@ -27,12 +30,14 @@ public class ShowElements : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0))
+        if(Input.GetKeyDown(KeyCode.E))
         {
             itemToDestroy.SetActive(false);
+            ritualObject.NumberOfObjects += 1;
             Debug.Log("Item Collected");
-            Destroy(triggerObject);
             canvasObject.SetActive(false);
+            Destroy(triggerObject);
+            
 
         }
     }

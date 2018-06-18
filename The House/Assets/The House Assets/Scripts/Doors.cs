@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Doors : MonoBehaviour {
+public class Doors : MonoBehaviour
+{
 
     public bool open = false;
     public float doorOpenAngle = 90f;

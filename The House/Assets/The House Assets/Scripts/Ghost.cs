@@ -4,8 +4,10 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.SceneManagement;
 
-public class Ghost : MonoBehaviour {
+public class Ghost : MonoBehaviour
+{
 	public float deathDistance = 1.1f;
 	public float distanceAway;
 	public Transform thisObject;
@@ -50,19 +52,28 @@ public class Ghost : MonoBehaviour {
 		if (dist <= deathDistance)
         {
 
-            Invoke("ShowGameOverUI", 5f);
+            
             player.GetComponent<FirstPersonController>().enabled = false;
             deathCam.SetActive(true);
 
+            Invoke("FadeOut", 4.2f);
+            Invoke("ShowGameOver", 5f);
 
-           
+
         } 
 	}
-    void ShowGameOverUI()
+    void ShowGameOver()
     {
-        gameoverCanvas.SetActive(true);
-        AudioSource audio = GetComponent<AudioSource>();
-        audio.PlayOneShot(gameoverSound);
+        SceneManager.LoadScene("GameOver");
+        //gameoverCanvas.SetActive(true);
+        //AudioSource audio = GetComponent<AudioSource>();
+        //audio.PlayOneShot(gameoverSound);
     }
+
+    void FadeOut()
+    {
+        GameObject.Find("SceneManager").GetComponent<Animator>().SetTrigger("FadeOut");
+    }
+
 }
 

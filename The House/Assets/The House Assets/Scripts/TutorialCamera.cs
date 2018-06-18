@@ -19,9 +19,12 @@ public class TutorialCamera : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            Destroy(tutorialObjectF);
-            tutorialObjectAD.SetActive(true);
-            StartCoroutine("DestroyDelay");
+            if (tutorialObjectAD != null)
+            {
+                Destroy(tutorialObjectF);
+                tutorialObjectAD.SetActive(true);
+                StartCoroutine("DestroyDelay");
+            }
         }
 
     }

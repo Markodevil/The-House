@@ -15,7 +15,7 @@ public class TutorialElements : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && tutorialObject != null)
         {
             tutorialObject.SetActive(true);
             StartCoroutine("WaitForDelay");
