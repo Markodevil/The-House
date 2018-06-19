@@ -16,6 +16,6 @@ public class UIElements : MonoBehaviour, IPointerEnterHandler {
 		if (audioSource == null)
 			audioSource = gameObject.AddComponent<AudioSource> ();
 
-		audioSource.PlayOneShot (highlightSound);
+		audioSource.PlayOneShot (highlightSound, .4f);
 	}
 }

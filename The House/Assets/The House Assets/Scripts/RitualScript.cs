@@ -12,6 +12,7 @@ public class RitualScript : MonoBehaviour
     public GameObject TriggerSleep;
     public AudioClip candleFlame;
     public GameObject circleGlow;
+    public GameObject suppliesMessage;
     // Use this for initialization
     void Start ()
     {
@@ -21,7 +22,12 @@ public class RitualScript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-		
+		if (NumberOfObjects == 3)
+        {
+            // turn off message trigger
+            suppliesMessage.SetActive(false);
+        }
+
 	}
 
     void OnTriggerEnter(Collider other)
