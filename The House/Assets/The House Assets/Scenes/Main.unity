@@ -2323,7 +2323,7 @@ GameObject:
   - component: {fileID: 220237644}
   - component: {fileID: 220237643}
   m_Layer: 10
-  m_Name: NEED STUFF TUT
+  m_Name: Missing_Components_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
