@@ -13,7 +13,7 @@ public class CamSystem : MonoBehaviour
     public AudioClip cameraOpen;
     public AudioClip cameraClose;
     public AudioClip cameraSwap;
-    public GameObject crosshair;
+    public GameObject blurCamera;
 
 
     // Use this for initialization
@@ -27,6 +27,7 @@ public class CamSystem : MonoBehaviour
     void Update()
     {
         if (usingPhone)
+            blurCamera.SetActive(true);
 
         {
             if (Input.GetKeyDown(KeyCode.D))
@@ -76,7 +77,8 @@ public class CamSystem : MonoBehaviour
     {
         usingPhone = !usingPhone;
         phone.SetActive(usingPhone);
-        //crosshair.SetActive(false);
+        blurCamera.SetActive(false);
+
     }
 
     void TogglePlayerControls()
