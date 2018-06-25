@@ -13,13 +13,14 @@ public class CamSystem : MonoBehaviour
     public AudioClip cameraOpen;
     public AudioClip cameraClose;
     public AudioClip cameraSwap;
+    public GameObject crosshair;
 
 
     // Use this for initialization
 
     void Start()
     {
-      
+
     }
 
     // Update is called once per frame
@@ -75,6 +76,7 @@ public class CamSystem : MonoBehaviour
     {
         usingPhone = !usingPhone;
         phone.SetActive(usingPhone);
+        //crosshair.SetActive(false);
     }
 
     void TogglePlayerControls()

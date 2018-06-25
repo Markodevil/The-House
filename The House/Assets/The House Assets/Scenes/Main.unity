@@ -1009,7 +1009,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh127214
+  m_Name: pb_Mesh26562
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -4598,7 +4598,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 2
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -25320,6 +25320,7 @@ MonoBehaviour:
   scareSound: {fileID: 8300000, guid: b87e514357986f248aa92011acb96e60, type: 3}
   gameoverSound: {fileID: 8300000, guid: 3c2391d4d1a4af54fa188175987322f2, type: 3}
   Volume: 0
+  crosshair: {fileID: 0}
 --- !u!82 &924291299
 AudioSource:
   m_ObjectHideFlags: 0
@@ -44689,6 +44690,7 @@ MonoBehaviour:
   cameraOpen: {fileID: 8300000, guid: a616c64894063ac42b1b4a207a4261b6, type: 3}
   cameraClose: {fileID: 8300000, guid: c97e407fc8eddcc44b3f4a742c390289, type: 3}
   cameraSwap: {fileID: 8300000, guid: 3c2391d4d1a4af54fa188175987322f2, type: 3}
+  crosshair: {fileID: 0}
 --- !u!43 &2024621997
 Mesh:
   m_ObjectHideFlags: 0
@@ -46488,7 +46490,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '[LEFT MOUSE] OPEN'
+  m_Text: '[E] OPEN'
 --- !u!222 &2126435626
 CanvasRenderer:
   m_ObjectHideFlags: 0

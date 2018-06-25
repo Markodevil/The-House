@@ -20,6 +20,7 @@ public class Ghost : MonoBehaviour
     public AudioClip gameoverSound;
 	bool playAudio = false;
 	public float Volume;
+    public GameObject crosshair;
 
     void Start ()
     {
@@ -55,6 +56,7 @@ public class Ghost : MonoBehaviour
             
             player.GetComponent<FirstPersonController>().enabled = false;
             deathCam.SetActive(true);
+            crosshair.SetActive(false);
 
             Invoke("FadeOut", 4.2f);
             Invoke("ShowGameOver", 5f);
