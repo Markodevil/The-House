@@ -13,6 +13,8 @@ public class RitualScript : MonoBehaviour
     public AudioClip candleFlame;
     public GameObject circleGlow;
     public GameObject suppliesMessage;
+    public GameObject bedroomLight;
+
     // Use this for initialization
     void Start ()
     {
@@ -57,6 +59,12 @@ public class RitualScript : MonoBehaviour
 
                 // turn off glow tutorial
                 //circleGlow.SetActive(false);
+
+                // turn on bedroom light
+                bedroomLight.SetActive(true);
+                
+
+
                 
             }
         }

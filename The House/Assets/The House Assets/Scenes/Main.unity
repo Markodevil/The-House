@@ -38342,7 +38342,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1637223024020882, guid: 37833dcbf03311e4bbd6d6698ad5bcb8, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4812256977185416, guid: 37833dcbf03311e4bbd6d6698ad5bcb8, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -39226,6 +39226,7 @@ MonoBehaviour:
   candleFlame: {fileID: 8300000, guid: 3e0e6e82db7fe7a409f3e8eb293828ec, type: 3}
   circleGlow: {fileID: 0}
   suppliesMessage: {fileID: 220237641}
+  bedroomLight: {fileID: 1933005614}
 --- !u!65 &1795444502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40224,12 +40225,12 @@ GameObject:
   - component: {fileID: 1933005615}
   - component: {fileID: 1933005616}
   m_Layer: 0
-  m_Name: Point light
+  m_Name: BedroomLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1933005615
 Transform:
   m_ObjectHideFlags: 0
