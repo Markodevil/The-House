@@ -27,8 +27,7 @@ public class CamSystem : MonoBehaviour
     void Update()
     {
         if (usingPhone)
-            blurCamera.SetActive(true);
-
+        //blurCamera.SetActive(true);
         {
             if (Input.GetKeyDown(KeyCode.D))
             {
@@ -77,7 +76,7 @@ public class CamSystem : MonoBehaviour
     {
         usingPhone = !usingPhone;
         phone.SetActive(usingPhone);
-        blurCamera.SetActive(false);
+        //urCamera.SetActive(false);
 
     }
 

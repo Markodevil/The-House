@@ -4351,10 +4351,8 @@ GameObject:
   m_Component:
   - component: {fileID: 493475405}
   - component: {fileID: 493475404}
-  - component: {fileID: 493475403}
   - component: {fileID: 493475402}
   - component: {fileID: 493475401}
-  - component: {fileID: 493475400}
   m_Layer: 0
   m_Name: BlurCam
   m_TagString: MainCamera
@@ -4362,21 +4360,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &493475400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 493475399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 902e1270015ea0c4d8756906627a28cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactDistance: 1.5
-  Candles: {fileID: 743271597}
-  Charcoal: {fileID: 1096670664}
-  Matches: {fileID: 692916705}
 --- !u!114 &493475401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4393,14 +4376,6 @@ MonoBehaviour:
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 12474086, guid: 5e9e851c0e142814dac026a256ba2ac0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 493475399}
-  m_Enabled: 1
---- !u!81 &493475403
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8100000, guid: 5e9e851c0e142814dac026a256ba2ac0,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 493475399}
@@ -5394,7 +5369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &585469719
 Transform:
   m_ObjectHideFlags: 0
@@ -24211,6 +24186,11 @@ Prefab:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 137677716374565140, guid: 37833dcbf03311e4bbd6d6698ad5bcb8,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6cd1f4699c89ef14fb2cac7894ae4ddb, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37833dcbf03311e4bbd6d6698ad5bcb8, type: 2}
   m_IsPrefabParent: 0
@@ -27080,7 +27060,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1101627762
 Transform:
   m_ObjectHideFlags: 0
@@ -40261,7 +40241,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1920860902
 Transform:
   m_ObjectHideFlags: 0
@@ -45239,9 +45219,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCamera: 0
   securityCameras:
-  - {fileID: 585469718}
-  - {fileID: 236151273}
   - {fileID: 1101627761}
+  - {fileID: 236151273}
+  - {fileID: 585469718}
   - {fileID: 1265627672}
   - {fileID: 527852952}
   usingPhone: 0
