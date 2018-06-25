@@ -31,7 +31,7 @@ public class TutorialElements : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Destroy(tutorialObject);
 

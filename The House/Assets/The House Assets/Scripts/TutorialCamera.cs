@@ -26,7 +26,6 @@ public class TutorialCamera : MonoBehaviour
                 StartCoroutine("DestroyDelay");
             }
         }
-
     }
 
     private IEnumerator WaitForDelay()

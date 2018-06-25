@@ -9,6 +9,7 @@ public class ShowElements : MonoBehaviour
     public GameObject itemToDestroy;
     public GameObject triggerObject;
     public RitualScript ritualObject;
+    public AudioSource collectSource;
     public AudioClip collectSound;
 
  
@@ -16,7 +17,7 @@ public class ShowElements : MonoBehaviour
 
     void Start()
     {
-
+       
     }
 
 
@@ -32,12 +33,13 @@ public class ShowElements : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E))
         {
+            collectSource.PlayOneShot(collectSound);
             itemToDestroy.SetActive(false);
             ritualObject.NumberOfObjects += 1;
             Debug.Log("Item Collected");
             canvasObject.SetActive(false);
             Destroy(triggerObject);
-            
+
 
         }
     }
