@@ -43,3 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Candles
+    uniqueID: 1723653887
+    locked: 0
